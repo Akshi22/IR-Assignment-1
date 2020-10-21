@@ -15,8 +15,6 @@ from django.contrib.staticfiles import finders
 import json
 
 
-# Create your views here.
-
 
 @api_view(['GET'])
 def apiOverview(request):
@@ -50,9 +48,9 @@ def search(request):
         if keyword:
             lyrics_loc = "data\lyrics.csv"
             data_path = finders.find(lyrics_loc)
-            print(data_path)
+            #print(data_path)
             searc_loc = finders.searched_locations
-            print("Locations: %s" % searc_loc)
+            #print("Locations: %s" % searc_loc)
             if len(searc_loc) > 0:
                 lyrics_path = "%s\%s" % (
                     searc_loc[0], lyrics_loc)

@@ -5,11 +5,11 @@ from .models import Lyrics, Search
 
 class LyricsSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Lyrics
+        model = Lyrics #model used to return the result to the user
         fields = '__all__'
 
 
 class SearchSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Search
+        model = Search #model to take the input keyword from the user
         fields = '__all__'

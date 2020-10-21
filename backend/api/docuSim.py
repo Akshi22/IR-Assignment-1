@@ -1,7 +1,7 @@
-import pandas as pd
-import numpy as np
+import pandas as pd #to open a local csv file
+import numpy as np #to work with arrays and matrices
 
-from nltk.corpus import stopwords
+from nltk.corpus import stopwords 
 from nltk.tokenize import word_tokenize
 
 from sklearn.feature_extraction import text
@@ -12,7 +12,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 
 def read_data(path):
-    lyrics = pd.read_csv(path)
+    lyrics = pd.read_csv(path) 
     return lyrics
 
 
